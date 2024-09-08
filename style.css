@@ -6,7 +6,7 @@
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff;
+  background-color: #ffecec;
   color: #333;
   line-height: 1.6;
 }
@@ -15,7 +15,7 @@ body {
   max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #ececec;
+  background-color: #ecec;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
   border-radius: 8px;
 }
@@ -87,4 +87,55 @@ h2 {
 
 #news-list li a:hover {
   background-color: #005bb5;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+    max-width: 90%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  #news-list li {
+    padding: 15px;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    max-width: 95%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.85rem;
+  }
+
+  #news-list li {
+    padding: 10px;
+  }
+
+  #news-list li a {
+    padding: 6px 10px;
+  }
 }
